@@ -14,8 +14,6 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
 
-  s.add_dependency 'paper_trail',  '~> 2'
-
   s.add_development_dependency 'database_cleaner', '0.5.2'
   s.add_development_dependency 'mocha'
   s.add_development_dependency 'pathname_local'
