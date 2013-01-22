@@ -14,17 +14,10 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
 
-  if ENV['RAILS_3_0']
-    s.add_dependency 'activerecord', '~> 3.0.0'
-    s.add_dependency 'activemodel', '~> 3.0.0'
-  elsif ENV['RAILS_3_1']
-    s.add_dependency 'activerecord', '~> 3.1.0'
-    s.add_dependency 'activemodel', '~> 3.1.0'
-  else
-    # normal case
-    s.add_dependency 'activerecord', '>= 3.0.0'
-    s.add_dependency 'activemodel', '>= 3.0.0'
-  end
+  # normal case
+  s.add_dependency 'activerecord', '>= 3.0.0'
+  s.add_dependency 'activemodel', '>= 3.0.0'
+
   s.add_dependency 'paper_trail',  '~> 2'
 
   s.add_development_dependency 'database_cleaner', '0.5.2'
